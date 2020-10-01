@@ -1,0 +1,181 @@
+.section2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 0.5fr);
+  justify-items: center;
+  column-gap: 64px;
+  padding-left: 100px;
+  padding-right: 100px;
+  position: relative;
+  .box1 {
+    grid-column: 1/2;
+  }
+  .box2 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    img {
+      width: 309px;
+      height: 341px;
+    }
+  }
+
+  .box3 {
+    grid-column: 2/3;
+    margin-top: 52px;
+  }
+
+  .box4 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  .box5 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    place-self: center;
+    width: 112px;
+    height: 8px;
+    left: 624px;
+    background: linear-gradient(
+      265.89deg,
+      #5b0673 -10.87%,
+      #5b0673 0.1%,
+      #5b0673 9.4%,
+      #71078e 22.52%,
+      #7a0899 30.63%,
+      #5d25b1 44.72%,
+      #2b57db 71.86%,
+      #0c76f5 92.45%,
+      #0082ff 103.91%,
+      #0586ff 107.66%,
+      #1391ff 112.05%,
+      #2ba3ff 116.76%,
+      #4bbcff 121.65%,
+      #6cd5ff 125.71%,
+      #6cd5ff 134.43%
+    );
+  }
+
+  .box6 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    place-self: center;
+  }
+  .border {
+    &:before {
+      content: "";
+      position: absolute;
+      width: 479px;
+      height: 265px;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+    }
+  }
+  .listContainer {
+    width: 570px;
+    height: 168px;
+  }
+  ul {
+    position: relative;
+    left: 55px;
+    top: 48px;
+  }
+
+  .image {
+    position: absolute;
+    width: 300px;
+    left: 807.64px;
+    top: 8px;
+    clip-path: polygon(
+      0% 15%,
+      0 0,
+      15% 0%,
+      85% 0%,
+      85% 15%,
+      100% 15%,
+      100% 85%,
+      85% 85%,
+      85% 100%,
+      15% 100%,
+      0 100%,
+      0% 85%
+    );
+  }
+}
+
+.decor1 {
+  background-color: $LightGray;
+  width: 301.66px;
+  height: 130.91px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.graphGradient {
+  background-image: linear-gradient(
+      180deg,
+      #5b0673 0%,
+      #5b0673 7.55%,
+      #5b0673 13.95%,
+      #71078e 22.98%,
+      #7a0899 28.56%,
+      #5d25b1 38.26%,
+      #2b57db 56.94%,
+      #0c76f5 71.11%,
+      #0082ff 79%,
+      #0586ff 81.58%,
+      #1391ff 84.6%,
+      #2ba3ff 87.84%,
+      #4bbcff 91.21%,
+      #6cd5ff 94%,
+      #6cd5ff 100%
+    ),
+    url("../images/image 94.png");
+  background-size: 309px 341px;
+  width: 309px;
+  height: 341px;
+  background-blend-mode: screen;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 768px) {
+  .section2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .section2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    .decor1 {
+      display: none;
+    }
+    .box1 {
+      grid-column: 1/2;
+      grid-row: 1/2;
+    }
+    .box2 {
+      display: none;
+    }
+    .box3 {
+      grid-column: 1/2;
+      grid-row: 2/3;
+    }
+    .box4 {
+      grid-column: 1/2;
+      grid-row: 3/4;
+    }
+    .box5 {
+      display: none;
+    }
+    .box6 {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.section5 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 500px;
+  margin-left: 170px;
+  margin-right: 170px;
+  margin-bottom: 200px;
+  .border {
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    padding-top: 120px;
+    padding-bottom: 120px;
+    padding-right: 115px;
+    padding-left: 115px;
+    position: relative;
+  }
+  button {
+    position: absolute;
+    bottom: 0;
+  }
+}

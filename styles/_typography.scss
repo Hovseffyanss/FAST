@@ -1,0 +1,299 @@
+@import "./variables";
+@font-face {
+  font-family: "EuclidFlex-Bold";
+  src: url("../font/EuclidFLex/EuclidFlex-Bold.ttf");
+}
+@font-face {
+  font-family: "EuclidFlex";
+  src: url("../font/EuclidFLex/EuclidFlex-Regular.ttf");
+}
+@font-face {
+  font-family: "EuclidFlex-light";
+  src: url("../font/EuclidFLex/EuclidFlex-Light.ttf");
+}
+@font-face {
+  font-family: "EuclidFlex-ultralight";
+  src: url("../font/EuclidFLex/EuclidFlex-UltraLight.ttf");
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("../font/Raleway/static/Raleway-Regular.ttf");
+}
+@font-face {
+  font-family: "Raleway-Extra-Bold";
+  src: url("../font/Raleway/static/Raleway-ExtraBold.ttf");
+}
+
+h1 {
+  font-family: EuclidFlex-Bold;
+  font-size: 64px;
+  line-height: 72px;
+}
+
+.title {
+  font-family: EuclidFlex-Bold;
+  font-size: 24px;
+}
+
+li {
+  font-family: Raleway;
+  font-size: 40px;
+  font-weight: 300px;
+}
+
+.section2 {
+  .box3 {
+    p {
+      font-family: Raleway-Extra-Bold;
+      font-size: 26px;
+      line-height: 35px;
+    }
+    .vision {
+      font-family: EuclidFlex;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 15px;
+      letter-spacing: 0.35em;
+      text-transform: uppercase;
+      color: #2a88f6;
+    }
+  }
+}
+.vision {
+  font-family: EuclidFlex;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: #2a88f6;
+}
+
+header {
+  .box1 {
+    .text {
+      font-family: EuclidFlex-Bold;
+      font-size: 2.75em;
+      line-height: 56px;
+    }
+  }
+}
+
+button {
+  font-family: EuclidFlex-Bold;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 28px;
+  color: $White;
+}
+
+.discovering {
+  font-family: EuclidFlex;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  text-align: right;
+  letter-spacing: 0.19em;
+  text-transform: uppercase;
+  transform: rotate(-90deg);
+  opacity: 0.2;
+}
+
+.date {
+  font-family: EuclidFlex-bold;
+  font-size: 50px;
+  line-height: 30px;
+  color: $White;
+
+  text-align: right;
+  .dateLight {
+    font-family: EuclidFlex-Light;
+
+    font-size: 20px;
+  }
+}
+
+.box1 {
+  .title {
+    font-family: EuclidFlex-Bold;
+    font-size: 22.7667px;
+    line-height: 29px;
+    letter-spacing: 0.075em;
+    color: $Blue;
+  }
+  .projects {
+    font-family: EuclidFlex-bold;
+    font-size: 9.96042px;
+    line-height: 13px;
+    letter-spacing: 0.85em;
+    text-transform: uppercase;
+    color: $Blue;
+    transform: rotate(-90deg);
+  }
+  .gradientNumber {
+    font-family: EuclidFlex-Bold;
+    font-size: 160.79px;
+    line-height: 204px;
+    letter-spacing: 0.02em;
+    background: linear-gradient(180deg, $Blue 0%, rgba(0, 90, 132, 0) 100%);
+    background-clip: text;
+    opacity: 0.4;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+  }
+  .strokeNumber {
+    font-family: EuclidFlex-Bold;
+    font-size: 160.79px;
+    line-height: 204px;
+    letter-spacing: 0.02em;
+    opacity: 0.5;
+    color: transparent;
+    -webkit-text-stroke: 0.711458px $Blue;
+  }
+}
+
+.box2 {
+  .title {
+    font-family: EuclidFlex-Bold;
+    font-size: 22.7667px;
+    line-height: 29px;
+    letter-spacing: 0.075em;
+    color: $Purple;
+  }
+  .projects {
+    font-family: EuclidFlex-bold;
+    font-size: 9.96042px;
+    line-height: 13px;
+    letter-spacing: 0.85em;
+    text-transform: uppercase;
+    color: $Purple;
+    transform: rotate(-90deg);
+  }
+  .gradientNumber {
+    font-family: EuclidFlex-Bold;
+    font-size: 160.79px;
+    line-height: 204px;
+    letter-spacing: 0.02em;
+    background: linear-gradient(180deg, $Purple 0%, rgba(0, 90, 132, 0) 100%);
+    background-clip: text;
+    opacity: 0.4;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+  }
+  .strokeNumber {
+    font-family: EuclidFlex-Bold;
+    font-size: 160.79px;
+    line-height: 204px;
+    letter-spacing: 0.02em;
+    opacity: 0.5;
+    color: transparent;
+    -webkit-text-stroke: 0.711458px $Purple;
+  }
+}
+
+.box3 {
+  .title {
+    font-family: EuclidFlex-Bold;
+    font-size: 22.7667px;
+    line-height: 29px;
+    letter-spacing: 0.075em;
+    color: $YellowGreen;
+  }
+  .projects {
+    font-family: EuclidFlex-bold;
+    font-size: 9.96042px;
+    line-height: 13px;
+    letter-spacing: 0.85em;
+    text-transform: uppercase;
+    color: $YellowGreen;
+    transform: rotate(-90deg);
+  }
+  .gradientNumber {
+    font-family: EuclidFlex-Bold;
+    font-size: 160.79px;
+    line-height: 204px;
+    letter-spacing: 0.02em;
+    background: linear-gradient(
+      180deg,
+      $YellowGreen 0%,
+      rgba(0, 90, 132, 0) 100%
+    );
+    background-clip: text;
+    opacity: 0.4;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+  }
+  .strokeNumber {
+    font-family: EuclidFlex-Bold;
+    font-size: 160.79px;
+    line-height: 204px;
+    letter-spacing: 0.02em;
+    opacity: 0.5;
+    color: transparent;
+    -webkit-text-stroke: 0.711458px $YellowGreen;
+  }
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  .title {
+    font-family: EuclidFlex-Bold;
+    font-size: 64px;
+    line-height: 72px;
+    padding-bottom: 50px;
+  }
+  .paragraph {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+  }
+}
+
+.section5 {
+  .border {
+    font-family: EuclidFlex-ultralight;
+    font-size: 64px;
+    line-height: 72px;
+    text-align: center;
+  }
+  .Armenia {
+    font-family: EuclidFlex-Bold;
+    font-size: 64px;
+    line-height: 72px;
+    text-align: center;
+  }
+}
+
+footer {
+  .box1 {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .box2 {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    opacity: 0.5;
+  }
+}

@@ -1,0 +1,40 @@
+@import "./scrollbar";
+@import "./typography";
+@import "./variables";
+@import "./section2";
+@import "./section3";
+@import "./section4";
+@import "./section5";
+@import "./footer";
+@import "./gradient";
+@import "./header";
+
+body {
+  margin: 0;
+}
+
+.science {
+  position: absolute;
+  left: 273.24px;
+  top: 1300px;
+  img {
+    width: 1000px;
+    height: 168px;
+  }
+}
+
+button {
+  grid-row: 8/9;
+  grid-column: 2/3;
+  background: linear-gradient(90deg, #420960 0%, #751c73 100%);
+  border: none;
+  width: 141px;
+  height: 50px;
+  align-self: end;
+}
+
+@media only screen and (max-width: 768px) {
+  .science {
+    display: none;
+  }
+}

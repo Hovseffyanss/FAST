@@ -1,0 +1,193 @@
+header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  .box1 {
+    background: $White;
+    height: 650px;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+  }
+
+  .text {
+    grid-column: 2/7;
+    grid-row: 3/7;
+    align-self: center;
+    .vision {
+      padding-bottom: 10px;
+    }
+  }
+
+  .neon {
+    grid-column: 1/7;
+    grid-row: 9/11;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .box2 {
+    background: blue;
+    height: 650px;
+    object-fit: cover;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    position: relative;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      grid-row: 1/11;
+      grid-column: 1/7;
+    }
+  }
+
+  .decor3 {
+    background-color: $LightGray;
+
+    width: 114px;
+    height: 264px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: none;
+    grid-row: 1/11;
+    grid-column: 1/7;
+  }
+
+  .decor2 {
+    clip-path: polygon(
+      0% 15%,
+      15% 15%,
+      15% 0%,
+      85% 0%,
+      100% 0,
+      100% 15%,
+      100% 85%,
+      100% 100%,
+      85% 100%,
+      15% 100%,
+      0 100%,
+      0% 85%
+    );
+    background-color: $White;
+    width: 170px;
+    height: 90px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border: none;
+    grid-row: 1/11;
+    grid-column: 1/7;
+  }
+  .dateContainer {
+    width: 120px;
+    height: 112px;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(50px);
+    position: absolute;
+    right: 0;
+  }
+  .date {
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    text-align: left;
+  }
+
+  .gradientRectangle {
+    width: 57px;
+    height: 6px;
+    left: 624px;
+    background: linear-gradient(
+      265.89deg,
+      #5b0673 -10.87%,
+      #5b0673 0.1%,
+      #5b0673 9.4%,
+      #71078e 22.52%,
+      #7a0899 30.63%,
+      #5d25b1 44.72%,
+      #2b57db 71.86%,
+      #0c76f5 92.45%,
+      #0082ff 103.91%,
+      #0586ff 107.66%,
+      #1391ff 112.05%,
+      #2ba3ff 116.76%,
+      #4bbcff 121.65%,
+      #6cd5ff 125.71%,
+      #6cd5ff 134.43%
+    );
+  }
+  .header {
+    margin-top: 33px;
+    align-items: center;
+    position: absolute;
+    display: flex;
+    .hamburgerIcon {
+      background-color: $LightGray;
+      padding: 14px 15px 14px 13px;
+    }
+    .logo {
+      margin-left: 24px;
+    }
+  }
+
+  .blackBox {
+    position: absolute;
+    background-color: $Black;
+    width: 57px;
+    height: 240px;
+    top: 136px;
+    display: grid;
+    grid-template-rows: 1fr repeat(3, 0.5fr) 1fr;
+    justify-content: center;
+    align-items: center;
+    .prev {
+      grid-row: 1/2;
+      align-self: end;
+    }
+    .next {
+      grid-row: 5/6;
+      align-self: start;
+    }
+    .dot1,
+    .dot2,
+    .dot3 {
+      height: 7px;
+      width: 7px;
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 50%;
+      justify-self: center;
+      align-items: center;
+    }
+    .dot1 {
+      grid-row: 2/3;
+      align-self: end;
+      background-color: $White;
+    }
+    .dot2 {
+      grid-row: 3/4;
+    }
+    .dot3 {
+      grid-row: 4/5;
+      align-self: start;
+    }
+  }
+}
+
+@media only screen and (max-width: 1274px) {
+  header {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    .box1 {
+      grid-row: 2/3;
+      grid-column: 1/2;
+    }
+    .box2 {
+      grid-row: 1/2;
+      grid-column: 1/2;
+    }
+  }
+}

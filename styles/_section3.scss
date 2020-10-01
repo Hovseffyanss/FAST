@@ -1,0 +1,154 @@
+.section3 {
+  
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 0.7fr);
+  column-gap: 114px;
+  background-color: $LightGray;
+  padding-top: 30px;
+  padding-left: 100px;
+  padding-right: 100px;
+
+  .box1,
+  .box2,
+  .box3 {
+    justify-self: center;
+    grid-row: 1/2;
+    position: relative;
+    background-color: $White;
+    width: 284.58px;
+    height: 341.5px;
+    text-align: center;
+    margin-top: 165.3px;
+    clip-path: polygon(
+      0% 15%,
+      15% 15%,
+      15% 0%,
+      85% 0%,
+      100% 0,
+      100% 15%,
+      100% 85%,
+      59% 85%,
+      59% 100%,
+      15% 100%,
+      0 100%,
+      0% 85%
+    );
+  }
+
+  .box1 {
+    grid-column: 1/2;
+    position: relative;
+    text-align: center;
+    .title {
+      position: relative;
+      top: 61px;
+    }
+    .gradientNumber {
+      position: absolute;
+    }
+    .strokeNumber {
+      left: 10px;
+      position: relative;
+    }
+    .number {
+      position: absolute;
+      left: 160px;
+      top: 60px;
+    }
+    .projects {
+      top: 128px;
+      position: relative;
+    }
+  }
+  .box2 {
+    grid-column: 2/3;
+    text-align: center;
+    .title {
+      position: relative;
+      top: 61px;
+    }
+    .gradientNumber {
+      position: absolute;
+    }
+    .strokeNumber {
+      left: 10px;
+      position: relative;
+    }
+    .number {
+      position: absolute;
+      left: 160px;
+      top: 60px;
+    }
+    .projects {
+      top: 128px;
+      position: relative;
+    }
+  }
+  .box3 {
+    grid-column: 3/4;
+    text-align: center;
+    .title {
+      position: relative;
+      top: 61px;
+    }
+    .gradientNumber {
+      position: absolute;
+    }
+    .strokeNumber {
+      left: 10px;
+      position: relative;
+    }
+    .number {
+      position: absolute;
+      left: 160px;
+      top: 60px;
+    }
+    .projects {
+      top: 128px;
+      position: relative;
+    }
+  }
+}
+
+.flex {
+  display: flex;
+}
+
+.boxing {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  align-self: start;
+  margin-top: 75px;
+}
+
+@media only screen and (max-width: 768px) {
+  .section3 {
+    overflow: scroll;
+    // .grid1,
+    // .grid2,
+    // .grid3 {
+    //   width: 200px;
+    //   height: 250px;
+    //   background-color: blueviolet;
+    // }
+  }
+
+  // .section3 {
+  //   display: grid;
+  //   grid-template-columns: 1fr;
+  //   grid-template-rows: repeat(3, 1fr);
+  //   .grid1 {
+  //     grid-row: 1/2;
+  //     grid-column: 1/2;
+  //   }
+  //   .grid2 {
+  //     grid-row: 2/3;
+  //     grid-column: 1/2;
+  //   }
+  //   .grid3 {
+  //     grid-row: 3/4;
+  //     grid-column: 1/2;
+  //   }
+  // }
+}
